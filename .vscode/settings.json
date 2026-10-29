@@ -1,0 +1,18 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.import.gradle.wrapper.enabled": true,
+    "java.import.gradle.java.home": "/usr/lib/jvm/java-21-openjdk-amd64",
+    "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk-amd64",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "/usr/lib/jvm/java-21-openjdk-amd64",
+            "default": true
+        }
+    ],
+    "files.exclude": {
+        "**/.gradle": true,
+        "**/build": true,
+        "**/bin": true
+    }
+}
