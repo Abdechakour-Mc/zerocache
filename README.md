@@ -1,11 +1,24 @@
 # ZeroCache
 
-Throughout this project I will try to focus on LLD and HLD for clean production level coding. Now the idea of this app is to build a Distributed cache / key-value store server in JAVA
+A key-value cache server in Java, built to practice clean low-level and high-level design (LLD & HLD).
+The goal is a distributed cache with pluggable eviction policies and pluggable network transports (TCP first, RDMA later).
+
+## Status
+Early stage: a single-node, in-memory.
+
+- Generic "Cache<K, V>" interface with an in-memory implementation
+- Swappable eviction policies (Fifo, Lifo). Adding a new policy requires no changes to the cache class.
+- Unit tests with JUnit 5 
 
 
-Day 1:
-Build a small in-memory cache with a swappable eviction policy, where adding a new policy requires zero edits to the cache itself
+## Run the tests
+Using the following cmd: `./gradlew test`
 
+Requires Java 21.
 
----
-More details comes later ..
+## Roadmap
+- [ ] More eviction policies (LRU, LFU, TTL)
+- [ ] TCP server with a simple text protocol
+- [ ] REST admin and stats API (Spring Boot)
+- [ ] Sharding and replication
+- [ ] RDMA transport
