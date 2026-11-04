@@ -1,14 +1,16 @@
-package com.venus.zerocache;
+package com.venus.zerocache.eviction;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class FifoEvictionPolicy<K> implements EvictionPolicy<K> {
+
+public class LifoEvictionPolicy<K> implements EvictionPolicy<K> {
+
     private final Deque<K> insertionOrder = new ArrayDeque<>();
 
     @Override
     public void onKeyAdded(K key) {
-        insertionOrder.addLast(key);
+        insertionOrder.addFirst(key);
     }
 
     @Override

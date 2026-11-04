@@ -1,8 +1,10 @@
-package com.venus.zerocache;
+package com.venus.zerocache.cache;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
+
+import com.venus.zerocache.eviction.EvictionPolicy;
 
 public class InMemoryCache<K, V> implements Cache<K, V> {
 

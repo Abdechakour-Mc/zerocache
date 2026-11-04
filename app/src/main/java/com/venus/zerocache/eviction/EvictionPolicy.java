@@ -1,4 +1,4 @@
-package com.venus.zerocache;
+package com.venus.zerocache.eviction;
 
 public interface EvictionPolicy<K> {
     void onKeyAdded(K key);

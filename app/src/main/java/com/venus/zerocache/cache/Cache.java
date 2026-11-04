@@ -1,4 +1,4 @@
-package com.venus.zerocache;
+package com.venus.zerocache.cache;
 
 public interface Cache<K, V> {
     void put(K key, V value);

@@ -14,5 +14,6 @@
         "**/.gradle": true,
         "**/build": true,
         "**/bin": true
-    }
+    },
+    "java.compile.nullAnalysis.mode": "automatic"
 }
