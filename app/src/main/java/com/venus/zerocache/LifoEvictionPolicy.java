@@ -3,9 +3,7 @@ package com.venus.zerocache;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-/**
- * LifoEvictionPolicy
- */
+
 public class LifoEvictionPolicy<K> implements EvictionPolicy<K> {
 
     private final Deque<K> insertionOrder = new ArrayDeque<>();
